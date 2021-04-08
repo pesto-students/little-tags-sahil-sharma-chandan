@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>fast fingers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/jquery.countdown360.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="pattern">
+        <div id="login_screen" class="container text-center col-sm-12">
+            <img src="assets/main-image.svg"  class="img-fluid"/>
+            <form method="get" class="">
+                <div class="form-group">
+                    <div id="error" style="color:#FF5155" style="margin-left: -48%;"></div>
+                    <input class="form-control controls form-control-lg" type="text" name="" id="username"
+                        placeholder="TYPE YOUR NAME" style="background-color: #b9b9b9;color: black;">
+                </div>
+                <div class="form-group">
+                    <select class="form-control controls form-control-lg" name="" id="level"
+                        style="background: transparent;color: rgb(180, 180, 180);">
+                        <option value="difficulty_level" selected disabled>DIFFICULTY_LEVEL</option>
+                        <option value="easy">EASY</option>
+                        <option value="medium">MEDIUM</option>
+                        <option value="hard">HARD</option>
+                    </select>
+                </div>
+                <div class="form-group ml-5">
+                    <div id="start_button"></div>
+                </div>
+            </form>
+        </div>
+        <div id="game_screen">
+            <div class="row mr-0">
+                <div class="col col-3 p-4">
+                    <div class="ml-3"><img src="/assets/person.svg"
+                            style="width: inherit;height: inherit;margin:0;" />&nbsp;<span class="user" id="user"
+                            style="font-size:38px; vertical-align: middle;"></span></div>
+                    <div class="ml-3"><img src="/assets/gamepad.svg"
+                            style="width: inherit;height: inherit;margin:0;" /><span class="selected_level"
+                            id="selected_level" style="font-size:38px; vertical-align: middle;"></span>
+                    </div>
+                    <div class="scoreboard ml-3">
+                        <p class="text-center m-3">SCORE BOARD</p>
+                        <ul id="games_count" class="games_count"></ul>
+                    </div>
+                    <div id="cross" class="ml-3"><img src="/assets/cross.svg"
+                            style="width: inherit;height: inherit;margin:0;" /> <span
+                            style="font-size:38px; vertical-align: middle;">STOP GAME</span></div>
+                </div>
+                <div class="col col-6">
+                    <div class="center-column" style="margin-top: 300px;">
+                        <div class="text-center">
+                            <div>
+                                <!-- timer -->
+                                <div id="countdown"></div>
+                            </div>
+                            <p id="bag_words">&nbsp;</p>
+                            <div class="form-group">
+                                <input type="text" name="" id="writer" class="form-control"
+                                    style="text-align: center;max-width: 622px;height: 90px;margin: 0 auto;font-size: 22px;"
+                                    placeholder="TYPE HERE">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col col-3 p-4">
+                    <h1>fast fingers</h1>
+                    <img id="home_icon" src="/assets/home.svg" alt="" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+        <div id="game-over-screen-layout">
+            <div class="row mr-0" style="height: 100vh;">
+                <div class="col-3">
+                    <div class="ml-3"><img src="/assets/person.svg"
+                            style="width: inherit;height: inherit;margin:0;" />&nbsp;<span class="user"
+                            style="font-size:38px; vertical-align: middle;"></span></div>
+                    <div class="ml-3"><img src="/assets/gamepad.svg"
+                            style="width: inherit;height: inherit;margin:0;" /><span class="selected_level"
+                            style="font-size:38px; vertical-align: middle;">LEVEL : MEDIUM</span></div>
+                    <div id="quit" class="ml-3" style="font-size: 44px;position: relative;top: 80%;cursor: pointer;">
+                        QUIT</div>
+                        
+                </div>
+                <div class="col-6 text-center" style="margin-top: 300px; color: white;">
+                    <p id="games"></p>
+                    <p id="score_time"></p>
+                    <h3 id="high_score" style="text-align:left;margin-left:270px;color:green;">NEW HIGH SCORE!!</h3>
+                    <div>
+                        <div id="playagain" class="ml-3"><img src="/assets/palyagain.svg"
+                                style="width: inherit;height: inherit;margin:0;cursor: pointer;" /></div>
+
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h1>fast fingers</h1>
+                    <img id="home_icon" class="home_icon2" src="/assets/home.svg" alt="" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>

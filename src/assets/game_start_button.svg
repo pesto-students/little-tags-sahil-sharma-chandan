@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="379.69" height="112" viewBox="0 0 379.69 112">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff5155;
+      }
+
+      .cls-2 {
+        font-size: 48px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-3 {
+        filter: url(#start_game);
+      }
+
+      .cls-4 {
+        filter: url(#Icon_awesome-play);
+      }
+    </style>
+    <filter id="Icon_awesome-play" x="0" y="15.197" width="84.231" height="89.41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="start_game" x="56.69" y="0" width="323" height="112" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_250" data-name="Group 250" transform="translate(24 30.148)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, -24, -30.15)">
+      <path id="Icon_awesome-play-2" data-name="Icon awesome-play" class="cls-1" d="M34.324,17.364,5.855.533A3.86,3.86,0,0,0,0,3.874V37.526a3.879,3.879,0,0,0,5.855,3.34L34.324,24.044A3.878,3.878,0,0,0,34.324,17.364Z" transform="translate(24 39.19)"/>
+    </g>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -24, -30.15)">
+      <text id="start_game-2" data-name="start game" class="cls-2" transform="translate(80.69 76)"><tspan x="0" y="0">START GAME</tspan></text>
+    </g>
+  </g>
+</svg>
