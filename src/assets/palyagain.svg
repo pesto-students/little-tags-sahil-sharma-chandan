@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="120" viewBox="0 0 400 120">
+  <defs>
+    <filter id="PLAY_AGAIN" x="58" y="0" width="342" height="120" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_253" data-name="Group 253" transform="translate(-4538 -1654)">
+    <path id="Icon_open-reload" data-name="Icon open-reload" d="M26.3,0A26.3,26.3,0,1,0,44.98,44.98l-4.735-4.735A19.742,19.742,0,1,1,26.238,6.576,19.13,19.13,0,0,1,39.982,12.56l-7.168,7.168H52.542V0L44.717,7.825A26.157,26.157,0,0,0,26.238,0Z" transform="translate(4538 1690)" fill="#ff5155"/>
+    <g transform="matrix(1, 0, 0, 1, 4538, 1654)" filter="url(#PLAY_AGAIN)">
+      <text id="PLAY_AGAIN-2" data-name="PLAY AGAIN" transform="translate(82 82)" fill="#ff5155" font-size="54" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">PLAY AGAIN</tspan></text>
+    </g>
+  </g>
+</svg>
